@@ -3,7 +3,7 @@
 
 ## 使用说明
 
-浏览器打开 [https://thucg.github.io/tunet-usereg-web](https://thucg.github.com/tunet-usereg-web) 使用，该页面由 GitHub Pages 托管
+浏览器打开 [https://thucg.github.io/tunet-usereg-web/](https://thucg.github.io/tunet-usereg-web/) 使用，该页面由 GitHub Pages 托管
 
 你的**登录凭据直接发送到** auth4.tsinghua.edu.cn 的准入认证接口，我们不会收到你输入的凭据
 
