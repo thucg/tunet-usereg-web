@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>清华大学校园网自助服务系统</title>
+	<style media="all" type="text/css">
+	@import "https://usereg.tsinghua.edu.cn/style/all.css";body {
+	margin-top: 0px;
+	background-image: none;
+}
+</style>
+<script language="javascript" src="https://usereg.tsinghua.edu.cn/script/ajax.js"></script>
+<script language="javascript">
+function hidden_all()
+{
+	var i=0;
+	for(i=1; i<20; i++)
+	{
+		try{
+			document.getElementById("submenu"+i).style.display='none';
+		}catch(E){break;};
+	}
+}
+function showsubmenu(sid)
+{
+	document.getElementById("submenu"+sid).style.display=(document.getElementById("submenu"+sid).style.display=='none')?"":"none";
+}
+function do_logout()
+{
+	if(!confirm("是否要退出？"))
+		return;
+	var d="action=logout";
+	var res = postData("do.php", "post", d);
+	if(res == "ok")
+	{
+		location="login.php";
+	}
+}
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+ <tr>
+  <td>
+   <table width=100% cellpadding="0" cellspacing="0">
+    <tr>
+     <td width="523" height="100">
+      <img src="https://usereg.tsinghua.edu.cn/images/top_01.gif" width="523" height="100" border="0"/>
+     </td>
+     <td align="right" valign="bottom" background="https://usereg.tsinghua.edu.cn/images/top_02.gif">
+     </td>
+    </tr>
+    <tr>
+     <td colspan=2 bgcolor='#E6F3FC'></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="2" height=1 bgcolor="#088DD2"></td>
+ </tr>
+ <tr>
+  <td colspan="2" height=2 ></td>
+ </tr>
+ <tr>
+ <td colspan="2">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td width="164" valign="top">
+     <table width="164" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td height="29" valign="bottom" background="https://usereg.tsinghua.edu.cn/images/left_01.gif">
+        <table width="75%" border="0" align="right" cellpadding="0" cellspacing="0" >
+         <tr>
+          <td height="22" id=menuTitle1 onMouseOver="this.className='menu_title2';" onMouseOut="this.className='menu_title';">
+           <a href="#" onclick="showsubmenu(1);return false;"><font style='color:#FFFFFF;font-wight:bold;'>帐户管理</font></a>
+          </td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <table width="82%" border="0" align="right" cellpadding="0" cellspacing="0" id="submenu1" style="display:">
+         <tr>
+          <td height="5" colspan="2"></td>
+         </tr>
+                  <tr>
+          <td width="18" height="22" style='color:#4B7FA7;font-wight:bold;'>◎</td>
+          <td height="22" ><a href="https://usereg.tsinghua.edu.cn/" target="_blank"><font style='color:#4B7FA7;font-wight:bold;'>连线其它IP</font></a></td>
+         </tr>
+             </table>
+      </td>
+    </tr>
+    <tr>
+     <td height="5"></td>
+    </tr>
+	<tr>
+      <td height="29" valign="bottom" background="https://usereg.tsinghua.edu.cn/images/left_02.gif">
+        <table width="75%" border="0" align="right" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="22" style="color:#FFFFFF;font-wight:bold;" id="menuTitle3" onMouseOver="this.className='menu_title3';" onMouseOut="this.className='menu_title3';">
+              <a href="#" onclick="showsubmenu(3);return false;"><font style='color:#FFFFFF;font-wight:bold;'>准入功能</font></a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table width="82%" border="0" align="right" cellpadding="0" cellspacing="0" id="submenu3" style="display:">
+          <tr>
+            <td height="5" colspan="2" ></td>
+          </tr>
+		  <tr>
+          <td width="18" height="22" style='color:#4B7FA7;font-wight:bold;'>◎</td>
+          <td height="22" ><a href="ip_login_import.html" target="main"><font style='color:#4B7FA7;font-wight:bold;'>准入代认证</font></a></td>
+         </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="5"></td>
+    </tr>
+  </table>
+  </td>
+  <td width="2" valign="top"></td>
+  <td width="8" valign="top" bgcolor="#088DD2">&nbsp;</td>
+  <td valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="right" height="5">
+					</td>
+				</tr>
+				<tr>
+					<td height="895">
+						<iframe name="main" width="100%" height="895" src="ip_login_import.html" frameborder="0" ></iframe></td>
+					</td>
+				</tr>
+			</table>
+		</td>
+ </tr>
+</table>
+</body>
+</noframes>
+</html>

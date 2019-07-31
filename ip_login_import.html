@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>Srun3000计费管理系统-ip代理准入认证</title>
+    <style media="all" type="text/css">
+        @import "https://usereg.tsinghua.edu.cn/style/all.css";body {
+            margin-top: 0px;
+            background-image: none;
+        }
+    </style>
+    <script language="javascript" src="https://usereg.tsinghua.edu.cn/js/jquery.js"></script>
+    <script language="javascript" src="https://usereg.tsinghua.edu.cn/js/hashes.min.js"></script>
+    <script language="javascript" src="js/portal.main.min.js"></script>
+</head>
+<body>
+<table class="maintab" align="center">
+    <tr>
+        <td width="10">
+        </td>
+        <td style="padding: 10px 0 10px 0;">
+            <strong>准入代认证</strong>
+        </td>
+    </tr>
+    <tr>
+        <td width="10">
+        </td>
+        <td>
+            <form id="form2" method="post" action=''>
+                <table border-collapse:separate; border-spacing:0px 10px;>
+                    <input type="hidden" name="n" value="100">
+                    <input type="hidden" id="ac_id" value="1">
+                    <input type="hidden" name="is_pad" value="1">
+                    <input type="hidden" name="type" value="10">
+                    <input type="hidden" name="action" value="do_login">
+                    <tr>
+						<td width=80>IP</td>
+                        <td>
+                            <input type="text" width=100 id="user_ip" value="" auto_complete="off">
+                        </td>
+                    </tr>
+                    <tr>
+						<td width=80>Username</td>
+                        <td>
+                            <input type="text" width=100 id="username" value="">
+                        </td>
+                        <td>
+                            <span style="margin-left: 5px;">不要填学号/工作证号</span>
+                        </td>
+                    </tr>
+                    <tr>
+						<td width=80>Password</td>
+                        <td>
+                            <input width=100 id="password" name="password" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width=80>校内/校外</td>
+                        <td>
+                            <input type='radio' name="online_type" value="1" checked/>校内
+                            <input type='radio' name="online_type" value="2" />校外
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" style="height:20px;" value="登录">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
