@@ -5,9 +5,9 @@
 
 浏览器打开 [https://thucg.github.io/tunet-usereg-web/](https://thucg.github.io/tunet-usereg-web/) 使用，该页面由 GitHub Pages 托管
 
-你的**登录凭据直接发送到** auth4.tsinghua.edu.cn 的准入认证接口，我们不会收到你输入的凭据
+你的**登录凭据直接从你本机发送到** auth4.tsinghua.edu.cn 的准入认证接口，我们不会收到你输入的凭据
 
-请不要在校外用准入代认证，因为校外访问不了 auth4.tsinghua.edu.cn
+无法在校外使用准入代认证，因为校外无法从本机访问 auth4.tsinghua.edu.cn
 
 ## 修复了官方准入代认证的哪些 Bug
 
